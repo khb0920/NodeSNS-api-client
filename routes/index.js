@@ -87,7 +87,7 @@ router.get('/test', async(req, res, next) => {  //토큰 테스트용 라우터
 });
 
 router.get('/', (req, res) => {
-    res.render('main', { key : process.env.CLIENT_SECRET });
+    res.render('main', { key : process.env.FRONT_SECRET });
 });
 
 module.exports = router;
